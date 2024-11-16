@@ -12,6 +12,27 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@keyframes textmain {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes botton {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 .Header {
   display: flex;
   align-items: center;
@@ -43,10 +64,28 @@
   align-items: center;
   flex-direction: column;
   margin: 55px;
+  gap: 30px;
+}
+.Slide-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  height: 400px;
+  width: 400px;
+  background-color: rgb(0, 0, 0);
+
 }
 .Slide{
   align-items: center;
   justify-content: center;
+
   height: 400px;
   width: 400px;
 }
@@ -56,6 +95,7 @@
   align-items: center;
   justify-content: center;
   height: 50vh;
+  animation: textmain 1s ease 0s 1 normal forwards;
 }
 /* Fazer depois o projeto do texto MAIN COM AS IMAGEM NO FORMATO GRID (PEGAR SEPARADAMENTE AS IMAGEM E ORDERNAR JUNTO COM O TEXTO*/
 .texttop {
@@ -82,6 +122,14 @@ top: calc(50% - 96px/2);*/
   align-items: center;
   height: 20px;
   
+}
+
+.div-btt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: botton 1.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal none;
+
 }
 .each-slide-effect > div {
   display: flex;

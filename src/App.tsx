@@ -1,6 +1,7 @@
 import React from 'react';
 import Slideimg from './components/SlideImg';
-
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 function App() {
   return (
     <>
@@ -36,18 +37,30 @@ function App() {
       <div className='Main'>
         <div className='MainText'>
           <div className='texttop'>
-            <img src="src/assets/img-mainText/img-truck.svg" alt="img-truck" />
+            <img className = "truck" src="src/assets/img-mainText/img-truck.svg" alt="img-truck" />
             <h1>Cuidado que seus móveis precisam!</h1>
-            <img src="src/assets/img-mainText/img-box.svg" alt="" />
+            <img className='boox' src="src/assets/img-mainText/img-box.svg" alt="" />
           </div>
           <div className='img-textalling'>
             <p>melhor empresa da região serrana!</p>
           </div>
-          
-        </div>
-      <div className='Slide'>
-          
       </div>
+      <div className='div-btt'>
+        <Stack spacing={2} direction="row">
+        <Button className='btt-main' variant="contained">Ver Mais</Button>
+        </Stack>
+        </div>
+      </div>
+      <div className='Slide-info'>
+        <div className='info'>
+          <p>De pequenos fretes a grandes mudanças! 🚚
+• Montagem e desmontagem de móveis.
+• Serviços personalizados de organização e embalagem.
+PETROPOLIS - RJ</p>
+        </div>
+        <div className='Slide'>
+          <Slideimg/>
+        </div>
       </div>
     </div>
     </>
