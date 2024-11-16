@@ -1,0 +1,103 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+.TextLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+}
+.IconsLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  cursor: pointer;
+}
+.Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 55px;
+}
+.Slide{
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+}
+.MainText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+/* Fazer depois o projeto do texto MAIN COM AS IMAGEM NO FORMATO GRID (PEGAR SEPARADAMENTE AS IMAGEM E ORDERNAR JUNTO COM O TEXTO*/
+.texttop {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 9px;
+height: 55px;
+
+
+/*width: 781px;
+height: 96px;
+left: calc(50% - 781px/2 + 0.5px);
+top: calc(50% - 96px/2);*/
+
+
+}
+.textbottom{
+  display: flex;
+  
+}
+.img-textalling{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  
+}
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+
+
